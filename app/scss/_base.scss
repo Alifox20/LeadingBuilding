@@ -286,20 +286,84 @@ hr {
     font-weight: 400;
 }
 
+/* section_about_us */
 
-/* section_about */
+.section_about_us {
+    position: relative;
+    width: 76rem;
+    height: 43rem;
+    overflow: hidden;
+    margin: 0;
+}
 
-.section_about {
-    margin: 50px;
-    text-align: center;
-    font-size: 30px;
+.about_us_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about_us__image {
+    width: 100%;
+    height: 100%;
+    background: url('../images/about_us1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.about_us__content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30rem;
+    height: 31rem;
+}
+
+.content__text {
+    padding: 1.8rem;
+    color: #fff;
+    background-color: #2947A9;
+}
+
+.about_us__content h2 {
+    font-weight: 700;
+    margin: 1.2rem 0 2.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+.about_us__content p {
+    margin: 0 0 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.about_us__btn {
     font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    background-color: #fff;
+    color: #2947A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3.7rem;
+}
+
+.about_us__btn:hover {
+    background-color: #F9995D;
+    color: #fff;
 }
 
 /* service */
 
 .services {
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .services .service__card {
@@ -348,6 +412,161 @@ hr {
     margin-top: 15px;
 }
 
+/* experience_block */
+
+.container_experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.experience_block {
+    position: relative;
+    width: 75rem;
+    height: 50rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats {
+    position: relative;
+    width: 50%;
+}
+
+.stat {
+    position: absolute;
+    background-color: #fff;
+    padding: 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.icon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+}
+
+.note {
+    background-image: url('../images/note.png');
+    top: -56px;
+    left: -33px;
+}
+
+.handshake {
+    background-image: url('../images/handshake.png');
+    top: -23px;
+    right: -23px;
+}
+
+.win_cup {
+    background-image: url('../images/win_cup.png');
+    top: -21px;
+    right: -18px;
+}
+
+.calendar {
+    background-image: url('../images/calendar.png');
+    bottom: -37px;
+    right: -40px;
+}
+
+#projects-completed {
+    top: -126px;
+    left: 0;
+    width: 21.8rem;
+    height: 9.3rem;
+    z-index: 2;
+}
+
+#happy-clients {
+    top: -224px;
+    left: 269px;
+    width: 17.5rem;
+    height: 9.3rem;
+    z-index: 3;
+}
+
+#awards-win {
+    top: 12px;
+    right: 77px;
+    width: 17.2rem;
+    height: 9.3rem;
+    z-index: 4;
+}
+
+#years-in-business {
+    top: 120px;
+    left: 37px;
+    width: 20.6rem;
+    height: 9.3rem;
+    z-index: 1;
+}
+
+.number {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 5.2rem;
+    text-align: left;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    text-align: left;
+    color: #667299;
+    border-left: 6px solid #F9995D;
+    padding-left: 10px;
+}
+
+.experience {
+    position: relative;
+    width: 40%;
+}
+
+.experience h1 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-align: left;
+    margin: 10px 0;
+    color: #2947A9;
+}
+
+.experience p {
+    color: #525B7A;
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 20.2rem;
+}
+
+.experience__btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    text-align: center;
+    background-color: #2947A9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 3.7rem;
+}
+
+.experience__btn:hover {
+    opacity: 0.8;
+}
+
 /* consultation_block */
 
 .consultation_block {
@@ -356,13 +575,13 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
+    height: 18.7rem;
 }
 
 .content__block {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 1.8rem;
     color: #fff;
 }
 
@@ -411,7 +630,7 @@ hr {
 }
 
 .menu_item {
-    margin-left: 40px;
+    margin-left: 2.5rem;
     justify-content: left;
 }
 
@@ -425,7 +644,7 @@ hr {
 
 .tabs__list {
     list-style-type: none;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .tabs__link {
@@ -433,10 +652,10 @@ hr {
     font-weight: 500;
     color: #C2C7D6;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
     border: none;
     background: transparent;
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .tabs__link.active {
@@ -468,8 +687,8 @@ hr {
 .poject_card {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 80px 0;
+    gap: 2.5rem;
+    padding: 5rem 0;
     max-width: 75rem;
     justify-content: flex-end;
 }
@@ -483,7 +702,7 @@ hr {
 .cont__descr {
     display: flex;
     flex-direction: column;
-    width: 384px;
+    width: 24rem;
     padding: 12px 12px 16px 12px;
     gap: 12px;
     background-color: #2947A9;
@@ -506,14 +725,14 @@ hr {
 .project__cont.content {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 80px 0 40px;
+    gap: 1.8rem;
+    padding: 5rem 0 2.5rem;
     flex-direction: row-reverse;
 }
 
 .block {
-    width: 384px;
-    height: 331px;
+    width: 24rem;
+    height: 20.6rem;
     border-radius: 2px 0px 0px 0px;
     background-color: #2947a9;
 }
@@ -521,8 +740,8 @@ hr {
 .project_img_w {
     display: block;
     border-radius: 2px;
-    width: 384px;
-    height: 247px;
+    width: 24rem;
+    height: 15.4rem;
 }
 
 .tab__img {
@@ -541,14 +760,14 @@ hr {
 }
 
 .img__title {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     font-weight: 700;
 }
 
 .img__descr {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
     font-weight: 400;
 }
 
@@ -634,12 +853,12 @@ hr {
 /* footer */
 
 .footer {
-    padding: 30px 0;
+    padding: 1.8rem 0;
     display: flex;
     align-items: center;
-    min-height: 80px;
+    min-height: 5rem;
     background-color: #ccc;
-    margin-top: 50px;
+    margin-top: 3.1rem;
 }
 
 .footer {
