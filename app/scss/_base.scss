@@ -162,40 +162,23 @@ a:hover {
 }
 
 .swiper-prev {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.2rem;
-    text-align: center;
-    background-color: #292e3d;
     border-right: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @extend %swiper-buttons;
 }
 
 .swiper-next {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.2rem;
-    text-align: center;
-    background-color: #292e3d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %swiper-buttons;
 }
 
 .swiper-prev img {
-    width: 26px;
-    margin-right: 10px;
+    width: 1.6rem;
+    margin-right: 15px;
 }
 
 .swiper-next img {
-    width: 26px;
-    margin-left: 10px;
+    width: 1.6rem;
+    margin-left: 15px;
 }
 
 .swiper-container {
@@ -221,6 +204,14 @@ a:hover {
 
 /* reputation */
 
+.reputation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 3.7rem;
+}
+
 .reputation__cards {
     display: flex;
     justify-content: center;
@@ -235,13 +226,6 @@ a:hover {
     text-align: center;
     color: #3D445C;
     margin-bottom: 50px;
-}
-
-.reputation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #fff;
 }
 
 .container-rept {
@@ -293,7 +277,7 @@ hr {
 .section_about_us {
     width: 100%;
     overflow: hidden;
-    margin: 0;
+    margin: 10rem 0;
 }
 
 .about_us_container {
@@ -370,7 +354,7 @@ hr {
 
 .services {
     width: 100%;
-    padding-top: 50px;  
+    background-color: #F6F8F7;
 }
 
 .container-serv {
@@ -624,14 +608,9 @@ hr {
 }
 
 .consultation-btn {
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2em;
-    transition: background-color 0.3s, color 0.3s;
+    @extend %ctn-color-btn;
+    @extend %ctn-size-btn;
+    
 }
 
 .consultation-btn:hover {
@@ -646,7 +625,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 4.3rem;
+    margin: 4.3rem 0;
 }
 
 .menu_item {
@@ -870,17 +849,231 @@ hr {
     width: 11.8rem;
 }
 
+/* form */
+
+.form {
+    background-color: #F6F8F7;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 47.5rem;
+    height: 40rem;
+    margin: 0 auto;
+}
+
+.form__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.8rem;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.heading {
+    width: 100%;
+    height: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.2rem;
+}
+
+.form__descr {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+.form__name {
+    width: 21.2rem;
+    padding: 10px 8px;
+    margin-top: 2.3rem;
+    border: none;
+    border: 1px solid #E0E3EB;
+}
+
+.form__email {
+    width: 21.2rem;
+    padding: 10px 8px;
+    margin-top: 2.3rem;
+    border: none;
+    border: 1px solid #E0E3EB;
+}
+
+.reason {
+    width: 21.2rem;
+    padding: 10px 8px;
+    margin-top: 1.2rem;
+    background: url(../images/Vector.svg) 
+    no-repeat right 10px center / 20px 20px;
+    appearance: none;
+    border: none;
+    border: 1px solid #E0E3EB;
+    background-color: #fff;
+}
+
+.form__phone {
+    width: 21.2rem;
+    padding: 10px 8px;
+    margin-top: 1.2rem;
+    border: none;
+    border: 1px solid #E0E3EB;
+}
+
+.form__mesg {
+    width: 44.3rem;
+    height: 8.4rem;
+    padding: 10px 8px;
+    gap: 10px;
+    margin-top: 1.2rem;
+    border: none;
+    border: 1px solid #E0E3EB;
+}
+
+.form_text {
+    width: 14.1rem;
+    height: 1.1rem;
+    margin-top: 8px;
+}
+
+.form__block button {
+    @extend %form-btn;
+}
+
+.form__block button:hover {
+    opacity: 0.9;
+}
+
+.form__block span {
+    color: red;
+}
+
 /* footer */
 
 .footer {
-    padding: 1.8rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    min-height: 5rem;
-    background-color: #ccc;
-    margin-top: 3.1rem;
+    background-color: #fff;
 }
 
-.footer {
-    background-color: $color_accent;
+.container-footer {
+    width: 106rem;
+    padding: 3rem 0;
+}
+
+.top__section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact__info {
+    display: flex;
+    align-items: center;
+    row-gap: 1.2rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.info__address {
+    margin-left: 10px;
+}
+
+.info__phone {
+    margin-left: 2.5rem;
+}
+
+.info__email {
+    margin-left: 2.5rem;
+}
+
+.address div {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #2947A9;
+}
+
+/*.news__letter__social {
+    display: flex;
+}*/
+
+.news__letter {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.2rem;
+    color: #2947A9;
+}
+
+.news__letter__social input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 17.5rem;
+    height: 2.5rem;
+    padding: 10px 8px;
+    margin-right: 10px;
+}
+
+.news__letter__social button {
+    @extend %news-btn;
+}
+
+.news__letter__social button:hover {
+    background-color: #333;
+    color: #F9995D;
+}
+
+.social {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #2947A9;
+    margin-bottom: 1.2rem;
+}
+
+.social__icons {
+    padding-top: 3.1rem;
+}
+
+.social__icons a {
+    margin-right: 1.2rem;
+}
+
+.social__icons svg {
+    cursor: pointer;
+}
+
+.icon-svg:hover {
+    fill: #F9995D;
+}
+
+.footer__bottom {
+    background-color: #2947A9;
+    padding: 10px 0;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.text__footer {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    text-align: left;
+    color: #fff;
 }

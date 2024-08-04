@@ -1,0 +1,63 @@
+@mixin buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+%swiper-buttons {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    background-color: #292e3d;
+
+    @include buttons;
+}
+
+%ctn-color-btn {  
+    border: 2px solid #fff;  
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+%ctn-size-btn {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 5px;
+
+    @include buttons;
+}
+
+%form-btn {
+    width: 17.1rem;
+    background-color: #2947A9;
+    color: #fff;
+    height: 3.3rem;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+
+    @include buttons;
+}
+
+%news-btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #F9995D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
