@@ -57,3 +57,8 @@ const swiper2 = new Swiper(".mySlider", {
 
 });
 
+//burger-menu
+document.getElementById('burger-menu').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.header_item').classList.toggle('show');
+});

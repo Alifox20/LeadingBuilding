@@ -1,6 +1,7 @@
 @import './reset';
+@import './variables';
+@import './helpers/mixins/breakpoints';
 @import './helpers/extends/buttons_extends';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-@import './variables';
 @import './base';
