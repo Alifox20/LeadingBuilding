@@ -28,8 +28,9 @@
 %ctn-size-btn {
     font-weight: 600;
     font-size: 1.2em;
-    padding: 15px 25px;
+    padding: 12px 15px;
     border-radius: 5px;
+    margin-right: 78px;
 
     @include buttons;
 }
@@ -42,10 +43,11 @@
     padding: 1rem 1.2rem;
     border: none;
     border-radius: 2px;
-    margin-top: 2.4rem;
+    margin-top: 3.8rem;
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.3rem;
+    margin-left: -5.9rem;
 
     @include buttons;
 }
@@ -54,7 +56,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 24px;
     background-color: #F9995D;
     color: #fff;
     border: none;
